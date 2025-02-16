@@ -3,7 +3,7 @@
 HTML_FILE="index.html"
 
 # extract tasks and test data
-TODO_TASKS=($grep -A 1000 "ToDO Tasks:" "$1" | sed '1d; /Done Tasks:/ ,$d'
+TODO_TASKS=($grep -A 1000 "ToDO Tasks:" "$1" | sed '1d; /Done Tasks:/ ,$d')
 DONE_TASKS=$(awk '/Done Tasks:/,/^[[:space:]]*$/ { \
                   if(NR>1 && !/Done Tasks:/)print}' "$1")
 UNIT_TEST_RESULTS=$(cat "$2")
