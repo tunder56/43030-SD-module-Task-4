@@ -36,7 +36,7 @@ class TaskPool:
         task2.mark_completed()
         task3.mark_completed()
 
-        self.tasks[task1, task2, task3, task4, task5, task6]
+        self.tasks = [task1, task2, task3, task4, task5, task6]
 
     def add_task(self, task):
         self.tasks.append(task)
