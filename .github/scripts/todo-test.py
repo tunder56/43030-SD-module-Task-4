@@ -27,7 +27,7 @@ class TestTaskPool(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    suite - unittest.TestLoader().loadTestsFromTestCase(TestTaskPool)
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestTaskPool)
 
     captured_output = StringIO()
 
