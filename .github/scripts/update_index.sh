@@ -12,7 +12,7 @@ UNIT_TEST_RESULTS=$(cat "$2")
 # function to update the pretag
 
 update_pre(){
-    perl -i -0777 -pe "s#{<pre id=\"$1\">.*?</pre>}{<pre id=\"$1\">\n$2\n</pre>}ge" "$3"
+    perl -i -0777 -pe "s#<pre id=\"$1\">.*?</pre>#<pre id=\"$1\">\n$2\n</pre>#ge" "$3"
     }
 
 
